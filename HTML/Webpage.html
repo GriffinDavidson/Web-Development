@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<!-- Created by Griffin Davidson, All Rights Reserved -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+  <body>
+    <a-scene>
+
+      <a-sky color = "black"></a-sky>
+    
+<!-- Sun Star -->
+      <a-sphere
+        src = "Sun.jpg"
+        position = "0 -50 0"
+        radius = "20"
+      >
+        <a-animation
+          attribute = "rotation"
+          from = "0 0 0"
+          to = "0 360 0"
+          dur = "6000"
+          repeat = "indefinite"
+        >
+        </a-animation>
+      </a-sphere>
+<!-- End of Sun Star -->
+
+<!-- Orbital Ring for Mercury -->
+      <a-torus
+        color = "darkblue"
+        arc = "360"
+        radius = "60"
+        radius-tubular = "0.125"
+        position = "0 -50 0"
+        rotation = "-90 0 0"
+      >
+        <a-animation
+          attribute = "color"
+          from = "darkblue"
+          to = "black"
+          dur = "15000"
+          repeat = "indefinite"
+          direction = "alternate"
+        >
+        </a-animation>
+      </a-torus>
+<!-- End Orbital Ring for Mercury -->
+
+<!-- Mercury Planet -->
+      <a-sphere
+        radius = "2.5"
+        src = "Mercury.jpg"
+        position = "0 -50 -60"
+      >
+        <a-animation
+          attribute = "position"
+          from = "0 -50 -60"
+          to = "-60 -50 0"
+          dur = "18000"
+          repeat = "indefinite"
+          fill = "backwards"
+        >
+        </a-animation>
+
+        <a-animation
+          attribute = "rotation"
+          from = "0 0 0"
+          to = "0 360 0"
+          dur = "3600"
+          repeat = "indefinite"
+        >
+        </a-animation>
+      </a-sphere>
+<!-- End Mercury Planet -->
+
+<!-- Venus Orbital Ring -->
+      <a-torus
+        color = "darkblue"
+        arc = "360"
+        radius = "100"
+        radius-tubular = "0.125"
+        position = "0 -50 0"
+        rotation = "-90 0 0"
+      >
+        <a-animation
+          attribute = "color"
+          from = "darkblue"
+          to = "black"
+          dur = "24000"
+          repeat = "indefinite"
+          direction = "alternate"
+        >
+        </a-animation>
+      </a-torus>
+<!-- End Venus Orbital Ring -->
+
+<!-- Venus Planet -->
+      <a-sphere
+        radius = "9"
+        src = "Venus.jpg"
+        position = "100 -50 0"
+      >
+        <a-animation
+          attribute = "rotation"
+          dur = "70200"
+          repeat = "indefinite"
+          from = "0 0 0"
+          to = "0 360 0"
+        >
+        </a-animation>
+
+        <a-animation
+          attribute = "position"
+          from = "100 -50 0"
+          to = "0 -50 -100"
+          dur = "5000"
+          repeat = "indefinite"
+          fil = "backwards"
+        >
+        </a-animation>
+      </a-sphere>
+<!-- End of Venus Planet -->
+
+<!-- Earth Orbital Ring -->
+      <a-torus
+        color = "darkblue"
+        arc = "360"
+        radius = "140"
+        radius-tubular = "0.125"
+        position = "0 -50 0"
+        rotation = "-90 0 0"
+      >
+        <a-animation
+          attribute = "color"
+          from = "darkblue"
+          to = "black"
+          dur = "30000"
+          repeat = "indefinite"
+          direction = "alternate"
+        >
+        </a-animation>
+      </a-torus>
+<!-- End of Earth Orbital Ring -->
+
+<!-- Earth Planet -->
+      <a-sphere
+        radius = "10"
+        src = "Earth.png"
+        position = "0 -50 -140"
+      >
+        <a-animation
+          attribute = "rotation"
+          dur = "933"
+          repeat = "indefinite"
+          from = "0 0 0"
+          to = "0 360 0"
+        >
+        </a-animation>
+
+        <a-animation
+          attribute = "position"
+          from = "0 -50 -140"
+          to = "-140 -50 0"
+          dur = "3000"
+          repeat = "indefinite"
+          fill = "backwards"
+        >
+        </a-animation>
+      </a-sphere>
+<!-- End of Earth Planet -->
+
+<!-- Mars Orbital Ring -->
+      <a-torus
+        color = "darkblue"
+        arc = "360"
+        radius = "180"
+        radius-tubular = "0.125"
+        position = "0 -50 0"
+        rotation = "-90 0 0"
+      >
+        <a-animation
+          attribute = "color"
+          from = "darkblue"
+          to = "black"
+          dur = "34000"
+          repeat = "indefinite"
+          direction = "alternate"
+        >
+        </a-animation>
+      </a-torus>
+<!-- End of Mars Orbital Ring -->
+
+<!-- Mars Planet -->
+      <a-sphere
+        radius = "5.5"
+        position = "-180 -50 0"
+        src = "Mars.jpg"
+      >
+        <a-animation
+          attribute = "rotation"
+          from = "0 0 0"
+          to = "0 360 0"
+          dur = "620"
+          repeat = "indefinite"
+        >
+        </a-animation>
+
+        <a-animation
+          attribute = "position"
+          from = "-180 -50 0"
+          to = "0 -50 180"
+          dur = "6000"
+          repeat = "indefinite"
+          fill = "backwards"
+        >
+        </a-animation>
+      </a-sphere>
+<!-- End of Mars Planet -->
+
+<!-- Jupiter Orbital Ring -->
+      <a-torus
+        color = "darkblue"
+        arc = "360"
+        radius = "220"
+        radius-tubular = "0.125"
+        position = "0 -50 0"
+        rotation = "-90 0 0"
+      >
+        <a-animation
+          attribute = "color"
+          from = "darkblue"
+          to = "black"
+          dur = "38000"
+          repeat = "indefinite"
+          direction = "alternate"
+        >
+        </a-animation>
+      </a-torus>
+<!-- End of Jupiter Orbital Ring -->
+
+<!-- Jupiter Planet -->
+      <a-sphere
+        radius = "15"
+        position = "-220 -50 0"
+        src = "Jupiter.jpg"
+      >
+        <a-animation
+          attribute = "rotation"
+          dur = "200"
+          from = "0 0 0"
+          to = "0 360 0"
+          repeat = "indefinite"
+        >
+        </a-animation>
+
+        <a-animation
+          attribute = "position"
+          from = "-220 -50 0"
+          to = "0 -50 220"
+          dur = "7200"
+          repeat = "indefinite"
+          fill = "backwards"
+        >
+        </a-animation>
+      </a-sphere>
+<!-- End of Jupiter Planet -->
+
+<!-- Saturn Orbital Ring -->
+      <a-torus
+        color = "darkblue"
+        arc = "360"
+        radius = "260"
+        radius-tubular = "0.125"
+        position = "0 -50 0"
+        rotation = "-90 0 0"
+      >
+        <a-animation
+          attribute = "color"
+          from = "darkblue"
+          to = "black"
+          dur = "42000"
+          repeat = "indefinite"
+          direction = "alternate"
+        >
+        </a-animation>
+      </a-torus>
+<!-- End of Saturn Orbital Ring -->
+
+<!-- Saturn Planet -->
+      <a-sphere
+        radius = "13"
+        src = "Saturn.jpg"
+        position = "0 -50 260"
+      >
+        <a-animation
+          attribute = "rotation"
+          from = "0 0 0"
+          to = "0 360 0"
+          dur = "300"
+          repeat = "indefinite"
+        >
+        </a-animation>
+
+        <a-animation
+          attribute = "position"
+          from = "0 -50 260"
+          to = "260 -50 0"
+          dur = "20000"
+          repeat = "indefinite"
+          fill = "backwards"
+        >
+        </a-animation>
+      </a-sphere>
+<!--End of Saturn Planet -->
+
+<!-- Uranus Orbital Ring -->
+      <a-torus
+        color = "darkblue"
+        arc = "360"
+        radius = "300"
+        radius-tubular = "0.125"
+        position = "0 -50 0"
+        rotation = "-90 0 0"
+      >
+        <a-animation
+          attribute = "color"
+          from = "darkblue"
+          to = "black"
+          dur = "45000"
+          repeat = "indefinite"
+          direction = "alternate"
+        >
+        </a-animation>
+      </a-torus>
+<!-- End of Uranus Orbital Ring -->
+
+<!-- Uranus Planet -->
+      <a-sphere
+        radius = "12"
+        src = "Uranus.png"
+        position = "300 -50 0"
+      >
+        <a-animation
+          attribute = "position"
+          from = "300 -50 0"
+          to = "0 -50 -300"
+          dur = "50000"
+          repeat = "indefinite"
+          fill = "backwards"
+        >
+        </a-animation>
+
+        <a-animation
+          attribute = "rotation"
+          from = "0 0 0"
+          to = "360 0 0"
+          dur = "10000"
+          repeat = "indefinite"
+        >
+        </a-animation>
+      </a-sphere>
+<!-- End of Uranus Planet -->
+
+<!-- Neptune Orbital Ring -->
+      <a-torus
+        color = "darkblue"
+        arc = "360"
+        radius = "340"
+        radius-tubular = "0.125"
+        position = "0 -50 0"
+        rotation = "-90 0 0"
+      >
+        <a-animation
+          attribute = "color"
+          from = "darkblue"
+          to = "black"
+          dur = "28000"
+          repeat = "indefinite"
+          direction = "alternate"
+        >
+        </a-animation>
+      </a-torus>
+<!-- End of Neptune Orbital Ring -->
+
+<!-- Neptune Planet -->
+      <a-sphere
+        radius = "11"
+        src = "Neptune.jpg"
+        position = "0 -50 -340"
+      >
+        <a-animation
+          attribute = "rotation"
+          from = "0 0 0"
+          to = "0 360 0"
+          dur = "600"
+          repeat = "indefinite"
+        >
+        </a-animation>
+
+        <a-animation
+          attribute = "position"
+          from = "0 -50 -340"
+          to = "-340 -50 0"
+          dur = "30000"
+          repeat = "indefinite"
+          fill = "backwards"
+        >
+        </a-animation>
+      </a-sphere>
+<!-- End of Neptune Planet -->
+
+    </a-scene>
+  </body>
+</html>
